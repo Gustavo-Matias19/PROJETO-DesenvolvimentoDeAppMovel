@@ -22,7 +22,11 @@ export const CORES = {
 };
 
 export const estilos = StyleSheet.create({
+<<<<<<< HEAD
   // ===== CONTAINERS =====
+=======
+  // CONTAINERS
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   container: {
     flex: 1,
     backgroundColor: CORES.fundoClaro,
@@ -36,7 +40,11 @@ export const estilos = StyleSheet.create({
     padding: 15,
   },
 
+<<<<<<< HEAD
   // ===== CARDS =====
+=======
+  // CARDS
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   card: {
     backgroundColor: CORES.branco,
     margin: 10,
@@ -49,7 +57,11 @@ export const estilos = StyleSheet.create({
     shadowRadius: 4,
   },
 
+<<<<<<< HEAD
   // ===== INPUTS =====
+=======
+  // INPUTS
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   input: {
     backgroundColor: CORES.branco,
     padding: 12,
@@ -58,6 +70,7 @@ export const estilos = StyleSheet.create({
     borderWidth: 1,
     borderColor: CORES.borda,
   },
+<<<<<<< HEAD
   containerAdicionarItem: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -68,6 +81,10 @@ export const estilos = StyleSheet.create({
   },
 
   // ===== BOTÕES =====
+=======
+
+  // BOTÕES
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   botaoPrimario: {
     backgroundColor: CORES.primaria,
     padding: 16,
@@ -94,8 +111,22 @@ export const estilos = StyleSheet.create({
     alignItems: 'center',
     elevation: 5,
   },
+<<<<<<< HEAD
 
   // ===== TEXTOS =====
+=======
+  botaoFinalizar: {
+    flexDirection: 'row',
+    backgroundColor: CORES.primaria,
+    margin: 15,
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  // TEXTOS
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   titulo: {
     fontSize: 24,
     fontWeight: 'bold',
@@ -140,7 +171,11 @@ export const estilos = StyleSheet.create({
     color: CORES.cinzaMedio,
   },
 
+<<<<<<< HEAD
   // ===== PROGRESS BAR =====
+=======
+  // PROGRESS BAR
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   barraProgresso: {
     height: 8,
     backgroundColor: CORES.cinzaClaro,
@@ -153,7 +188,11 @@ export const estilos = StyleSheet.create({
     backgroundColor: CORES.primaria,
   },
 
+<<<<<<< HEAD
   // ===== LAYOUTS =====
+=======
+  // LAYOUTS
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   linha: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -173,7 +212,11 @@ export const estilos = StyleSheet.create({
     marginBottom: 8,
   },
 
+<<<<<<< HEAD
   // ===== ITEM LISTA =====
+=======
+  // ITEM LISTA
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   itemContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -191,7 +234,11 @@ export const estilos = StyleSheet.create({
     flex: 1,
   },
 
+<<<<<<< HEAD
   // ===== CABEÇALHOS =====
+=======
+  // CABECALHOS
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   cabecalho: {
     backgroundColor: CORES.branco,
     padding: 20,
@@ -199,7 +246,11 @@ export const estilos = StyleSheet.create({
     borderBottomColor: CORES.borda,
   },
 
+<<<<<<< HEAD
   // ===== TELA VAZIA =====
+=======
+  // TELA VAZIA
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
   vazioContainer: {
     flex: 1,
     justifyContent: 'center',
@@ -217,6 +268,7 @@ export const estilos = StyleSheet.create({
     marginTop: 5,
   },
 
+<<<<<<< HEAD
   // ===== MODAL =====
   modalOverlay: {
     flex: 1,
@@ -347,3 +399,15 @@ export const estilos = StyleSheet.create({
     borderTopColor: CORES.cinzaClaro,
   },
 });
+=======
+  // INPUT ITEM
+  containerAdicionarItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  inputItem: {
+    flex: 1,
+    marginRight: 10,
+  },
+});
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
