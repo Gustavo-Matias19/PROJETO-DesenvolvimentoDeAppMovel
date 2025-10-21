@@ -1,7 +1,15 @@
 {
   "expo": {
     "name": "projeto-desenvolvimento",
+<<<<<<< HEAD
     "slug": "snack-6123df77-cbea-4849-a46e-8998dc8983e6",
+=======
+<<<<<<< HEAD
+    "slug": "snack-6c224299-1034-4c7b-a535-f5e6dfd133fd",
+=======
+    "slug": "snack-1e5267df-0f77-41a7-bd66-70da1734ebdd",
+>>>>>>> 22a61768673c58df3bf28a94baab7eb52948f5fa
+>>>>>>> a26775ecddc8798c1c06dd6fb4589e6e9cb2e5b4
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
