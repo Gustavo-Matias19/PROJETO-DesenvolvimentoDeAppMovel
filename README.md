@@ -1,11 +1,46 @@
-# Sample Snack app
+# 🛒 SmartList – Aplicativo de Listas de Compras
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+## 📋 Visão Geral e Requisitos
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+O **SmartList** é um aplicativo móvel desenvolvido em **React Native** com o objetivo de **organizar listas de compras de forma simples e prática**.  
+O app permite criar, editar, marcar e excluir itens de compras, armazenando os dados localmente no dispositivo.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+### 🎯 Objetivo
+Facilitar o controle de compras do usuário, substituindo o papel e proporcionando uma interface amigável e funcional.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+### ✅ Requisitos atendidos
+- **4 telas implementadas:**
+  - Tela Inicial (visualização das listas)
+  - Tela de Criação de Lista
+  - Tela de Detalhes da Lista
+  - Tela de Conclusão / Estado de Itens
+- **Imagens**: uso de ícones (MaterialIcons) e elementos visuais do React Native.
+- **Armazenamento local**: via `AsyncStorage`.
+- **Atuador utilizado**: vibração do dispositivo (`Vibration`).
+- **Interface responsiva** feita com `React Native` e `Expo`.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+| Tecnologia | Descrição |
+|-------------|------------|
+| **React Native (Expo)** | Framework principal do app. |
+| **JavaScript (ES6)** | Linguagem utilizada. |
+| **AsyncStorage** | Armazenamento local dos dados. |
+| **React Navigation** | Navegação entre telas. |
+| **Material Icons** | Ícones e elementos visuais. |
+| **Vibration API** | Recurso de vibração do celular para feedback tátil. |
+
+---
+
+## 💡 Funcionalidades
+
+| Função | Descrição |
+|--------|------------|
+| 📝 **Criar Lista** | Permite criar novas listas de compras com nome e itens personalizados. |
+| 🛍️ **Adicionar Itens** | Adiciona produtos à lista de compras. |
+| ✅ **Marcar como Concluído** | Marca itens comprados e exibe progresso da lista. |
+| 🗑️ **Excluir Listas** | Remove listas inteiras com apenas um toque. |
+| 💾 **Salvar Automaticamente** | Todos os dados são armazenados localmente no dispositivo. |
+| 📳 **Feedback por Vibração** | O app vibra em certas ações, melhorando a interação do usuário. 
