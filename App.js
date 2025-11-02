@@ -3,6 +3,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialIcons } from '@expo/vector-icons';
+<<<<<<< HEAD
+=======
+import { StatusBar } from 'react-native';
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
 
 // Importa estilos e telas
 import { CORES } from './src/styles';
@@ -18,6 +22,7 @@ import {
 
 // ==================== CONFIGURAÇÃO DE NAVEGAÇÃO ====================
 
+<<<<<<< HEAD
 // Renomeando as variáveis de navegação
 const Pilha = createStackNavigator(); // Stack
 const AbasNavegador = createBottomTabNavigator(); // Tab
@@ -57,12 +62,64 @@ function NavegadorAbas() {
       <AbasNavegador.Screen name="Histórico" component={TelaHistorico} />
       <AbasNavegador.Screen name="Relatórios" component={TelaRelatorios} />
     </AbasNavegador.Navigator>
+=======
+const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
+
+// ==================== NAVEGADOR DE ABAS (Bottom Tabs) ====================
+function TabNavigator() {
+  return (
+    <Tab.Navigator
+      screenOptions={({ route }) => ({
+        headerShown: false,
+        tabBarIcon: ({ color, size }) => {
+          const icons = {
+            'Listas': 'shopping-cart',
+            'Comparar': 'compare-arrows',
+            'Receitas': 'restaurant-menu',
+            'Histórico': 'history',
+            'Relatórios': 'bar-chart'
+          };
+          return <MaterialIcons name={icons[route.name] || 'home'} size={size} color={color} />;
+        },
+        tabBarActiveTintColor: CORES.primaria,
+        tabBarInactiveTintColor: CORES.cinzaMedio,
+        tabBarLabelStyle: { 
+          fontSize: 11, 
+          fontWeight: '600',
+          marginBottom: 4
+        },
+        tabBarStyle: {
+          backgroundColor: CORES.fundoClaro,
+          borderTopColor: CORES.borda,
+          borderTopWidth: 1,
+          height: 60,
+          paddingBottom: 8,
+          paddingTop: 4,
+        },
+        tabBarItemStyle: {
+          paddingVertical: 4
+        }
+      })}
+    >
+      <Tab.Screen 
+        name="Listas" 
+        component={TelaInicial}
+        options={{ tabBarBadge: null }} // Pode adicionar contador aqui
+      />
+      <Tab.Screen name="Comparar" component={TelaComparadorPrecos} />
+      <Tab.Screen name="Receitas" component={TelaReceitasSugeridas} />
+      <Tab.Screen name="Histórico" component={TelaHistorico} />
+      <Tab.Screen name="Relatórios" component={TelaRelatorios} />
+    </Tab.Navigator>
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
   );
 }
 
 // ==================== NAVEGADOR PRINCIPAL (Stack) ====================
 export default function App() {
   return (
+<<<<<<< HEAD
     <NavigationContainer>
       <Pilha.Navigator
         screenOptions={{
@@ -87,5 +144,65 @@ export default function App() {
         />
       </Pilha.Navigator>
     </NavigationContainer>
+=======
+    <>
+      <StatusBar 
+        barStyle="light-content" 
+        backgroundColor={CORES.fundoEscuro}
+      />
+      <NavigationContainer>
+        <Stack.Navigator
+          screenOptions={{
+            headerStyle: { 
+              backgroundColor: CORES.fundoClaro,
+              elevation: 0,
+              shadowOpacity: 0,
+              borderBottomWidth: 1,
+              borderBottomColor: CORES.borda
+            },
+            headerTintColor: CORES.textoEscuro,
+            headerTitleStyle: { 
+              fontWeight: 'bold',
+              fontSize: 18
+            },
+            headerTitleAlign: 'center',
+            cardStyle: { backgroundColor: CORES.fundoEscuro },
+            // Animação de transição
+            cardStyleInterpolator: ({ current, layouts }) => {
+              return {
+                cardStyle: {
+                  opacity: current.progress,
+                },
+              };
+            },
+          }}
+        >
+          <Stack.Screen 
+            name="Home" 
+            component={TabNavigator} 
+            options={{ headerShown: false }} 
+          />
+          
+          <Stack.Screen 
+            name="CriarLista" 
+            component={TelaCriarLista} 
+            options={{ 
+              title: '🛒 Nova Lista',
+              headerBackTitle: 'Voltar'
+            }} 
+          />
+          
+          <Stack.Screen 
+            name="DetalhesLista" 
+            component={TelaDetalhesLista} 
+            options={{ 
+              title: 'Detalhes',
+              headerBackTitle: 'Voltar'
+            }} 
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
   );
 }

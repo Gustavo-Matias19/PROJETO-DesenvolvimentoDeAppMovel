@@ -1,7 +1,11 @@
 {
   "expo": {
     "name": "projeto-desenvolvimento",
+<<<<<<< HEAD
     "slug": "snack-b9e7b0d6-6463-49cb-b604-0177237bb1b4",
+=======
+    "slug": "snack-63924c3e-5016-4277-b555-68d2234552db",
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

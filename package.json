@@ -8,6 +8,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+<<<<<<< HEAD
     "expo": "~53.0.22",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
@@ -16,6 +17,16 @@
     "expo-constants": "~18.0.10",
     "react-native-maps": "1.20.1",
     "@expo/vector-icons": "^15.0.2",
+=======
+    "expo": "~54.0.20",
+    "expo-status-bar": "~3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "expo-location": "~19.0.7",
+    "expo-constants": "~18.0.10",
+    "react-native-maps": "1.20.1",
+    "@expo/vector-icons": "^15.0.3",
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
     "expo-notifications": "~0.32.12",
     "react-native-paper": "4.9.2",
     "react-native-screens": "~4.16.0",
@@ -26,8 +37,11 @@
     "react-native-safe-area-context": "~5.6.0",
     "@react-native-async-storage/async-storage": "2.2.0"
   },
+<<<<<<< HEAD
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
+=======
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
   "private": true
 }

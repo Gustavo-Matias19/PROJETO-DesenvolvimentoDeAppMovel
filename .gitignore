@@ -35,3 +35,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+<<<<<<< HEAD
+=======
+
+# generated native folders
+/ios
+/android
+>>>>>>> fb16ae4 (Subindo projeto novamente com melhorias)
